@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/logo.svg" type="image/x-icon">
+    <title>Home</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Inter", sans-serif;
+            color: #d1d0d1;
+        }
+
+        body {
+            background-color: #0f0f0f;
+            height: 100%;
+            width: 100%;
+        }
+
+        header {
+            background-color: #0c0c0c;
+            height: 80px;
+            width: auto;
+            justify-content: center;
+            display: flex;
+        }
+
+        .div-logo {
+            left: 15px;
+            top: 15px;
+            position: absolute;
+        }
+
+        .menu {
+            align-items: center;
+            display: flex;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .link-menu {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        li + li {
+            margin-left: 40px;
+        }
+
+        .pag-selecionada {
+            box-shadow: #F60D09 0px 1px;
+        }
+
+        .link-menu:hover {
+            color: #da2e2b;
+        }
+
+        .banner {
+            width: 100%;
+            height: 80vh;
+            background-image: url(../img/banner_home.png);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+        }
+
+        .div-text-banner {
+            margin-top: 100px;
+            color: #fff;
+            margin-left: 50px;
+            flex-direction: column;
+            display: flex;
+        }
+
+        .text-banner {
+            font-size: 110px;
+        }
+
+        .text-banner2 {
+            font-size: 45px;
+        }
+
+        .text-lado {
+            justify-content: start;
+            display: flex;
+        }
+
+        .red {
+            color: #F60D09;
+            margin-left: 5px;
+        }
+
+        .container {
+            padding: 5% 20%;
+            text-align: center;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.5;
+            margin-top: 10px;
+        }
+
+        .rodape {
+            background-color: #0c0c0c;
+        }
+
+        .div-icons-rodape {
+            display: flex;
+            justify-content: space-around;
+            padding: 0 200px;
+        }
+
+        .button-icons {
+            height: 70px;
+            width: 70px;
+            background-color: #F60D09;
+            border-radius: 100%;
+            border: 0;
+        }
+
+        .button-icons:hover {
+            background-color: #c20c09;
+        }
+
+        .img-icons {
+            height: 40px;
+        }
+
+        hr {
+            margin: 50px 150px;
+        }
+
+        .link-rodape {
+            text-decoration: none;
+        }
+
+        .div-icons-text {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .fita {
+            display: flex;
+            align-items: flex-end;
+            position: relative;
+            bottom: 35px;
+            width: 30vw;
+            min-width: 270px;
+            border-top: 70px solid #f60d09cc;
+            border-right: 50px solid transparent;
+            height: 0;
+        }
+        .fita h1 {
+            display: flex;
+            align-items: center;
+            position: relative;
+            left: 10%;
+            margin: 0;
+            height: 70px;
+            font-size: 2.25em;
+            text-align: center;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="div-logo">
+            <a href="home.html">
+                <img src="../img/logo.svg" alt="Logo">
+            </a>
+        </div>
+
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a class="link-menu pag-selecionada" href="home.html">HOME</a>
+                </li>
+
+                <li>
+                    <a class="link-menu" href="servicos.html">SERVIÇOS</a>
+                </li>
+
+                <li>
+                    <a class="link-menu" href="contato.html">CONTATO</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <div class="div-text-banner">
+            <h1 class="text-banner">SOBRE</h1>
+            <div class="text-lado">
+                <h2 class="text-banner2">DETALHAMENTO</h2>
+                <h2 class="text-banner2 red">AUTOMOTIVO</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="title">O QUE É DETALHAMENTO AUTOMOTIVO?</h1>
+        <p>O <b>Detalhamento Automotivo </b>é um conjunto de <b>processos minuciosos </b> realizados para <b>limpar, restaurar, proteger e melhorar a aparência de um veículo,
+            tanto por dentro quanto por fora</b>. Ao contrário de uma lavagem comum, o detalhamento vai além da limpeza superficial, abordando até os menores detalhes,
+            como a remoção de sujeiras difíceis, riscos e manchas, a aplicação de produtos para proteger a pintura, o tratamento do interior com produtos específicos
+            para estofados e plásticos, e a limpeza profunda de todas as superfícies. O objetivo é devolver o brilho original do carro, aumentar sua durabilidade
+            e oferecer uma experiência visual e sensorial mais agradável para o proprietário, além de valorizar o veículo.
+        </p>
+    </div>
+    
+    <footer class="rodape">
+        <div class="fita"><h1>SOBRE NÓS</h1></div>
+        <div>
+        </div>
+        <div class="div-icons-rodape">
+            <div class="div-icons-text">
+                <a class="link-rodape" href="https://www.instagram.com/ricardo_detail_auto/">
+                    <button class="button-icons">
+                            <img class="img-icons" src="../img/icon-isnta.png" alt="Instagram">
+                    </button>
+                </a>
+                <p>ricardo_detail_auto</p>
+            </div>
+
+            <div class="div-icons-text">
+                <a class="link-rodape" href="https://m.facebook.com/detailerautomotivo/">
+                    <button class="button-icons">
+                        <img class="img-icons" src="../img/icon-face.png" alt="Instagram">
+                    </button>
+                </a>
+                <p>Ricardo Detalhamento Automotivo</p>
+            </div>
+
+            <div class="div-icons-text">
+                <button class="button-icons">
+                    <a class="link-rodape" href="https://www.instagram.com/ricardo_detail_auto/">
+                        <img class="img-icons" src="../img/icon-email.png" alt="Instagram">
+                    </a>
+                </button>
+                <p>ricardopepe@live.com</p>
+            </div>
+        </div>
+
+        <hr>
+    </footer>
+</body>
+</html>
