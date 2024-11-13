@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../img/logo.svg" type="image/x-icon">
-    <title>Home</title>
+    <title>Ricardo Detail - Home</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
@@ -109,8 +109,35 @@
             margin-top: 10px;
         }
 
+        .servicos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+            margin-bottom: 150px;
+        }
+
+        .servicos h1 {
+            font-size: 3.25em;
+            margin: 10px;
+        }
+
+        .div-icons-servicos {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1400px;
+            width: 100%;
+            margin-inline: 20px;
+        }
+
+        .div-icons-servicos .div-icons-text {
+            margin-top: 100px;
+        }
+
         .rodape {
             background-color: #0c0c0c;
+            margin-top: 70px;
         }
 
         .div-icons-rodape {
@@ -129,6 +156,7 @@
 
         .button-icons:hover {
             background-color: #c20c09;
+            cursor: pointer;
         }
 
         .img-icons {
@@ -144,9 +172,10 @@
         }
 
         .div-icons-text {
-            justify-content: center;
-            align-items: center;
             text-align: center;
+            width: 25%;
+            min-width: 200px;
+            margin: 20px;
         }
 
         .fita {
@@ -199,7 +228,7 @@
         </nav>
     </header>
 
-    <div class="banner">
+    <section class="banner">
         <div class="div-text-banner">
             <h1 class="text-banner">SOBRE</h1>
             <div class="text-lado">
@@ -207,9 +236,9 @@
                 <h2 class="text-banner2 red">AUTOMOTIVO</h2>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="container">
+    <section class="container">
         <h1 class="title">O QUE É DETALHAMENTO AUTOMOTIVO?</h1>
         <p>O <b>Detalhamento Automotivo </b>é um conjunto de <b>processos minuciosos </b> realizados para <b>limpar, restaurar, proteger e melhorar a aparência de um veículo,
             tanto por dentro quanto por fora</b>. Ao contrário de uma lavagem comum, o detalhamento vai além da limpeza superficial, abordando até os menores detalhes,
@@ -217,7 +246,67 @@
             para estofados e plásticos, e a limpeza profunda de todas as superfícies. O objetivo é devolver o brilho original do carro, aumentar sua durabilidade
             e oferecer uma experiência visual e sensorial mais agradável para o proprietário, além de valorizar o veículo.
         </p>
-    </div>
+    </section>
+
+    <hr>
+
+    <section class="servicos">
+        <h1>SERVIÇOS</h1>
+        <div class="div-icons-servicos">
+            <div class="div-icons-text">
+                <a href="servicos.html"><button class="button-icons"><img src="../img/icon-carro.png" alt="lavagem simples"></button></a>
+                <p>LAVAGEM SIMPLES</p>
+            </div>
+            <div class="div-icons-text">
+                <a href="servicos.html"><button class="button-icons"><img src="../img/icon-balde.png" alt="lavagem simples"></button></a>
+                <p>LAVAGEM DETALHADA</p>
+            </div>
+            <div class="div-icons-text">
+                <a href="servicos.html"><button class="button-icons"><img src="../img/icon-bucha.png" alt="lavagem simples"></button></a>
+                <p>DESCONTAMINAÇÃO DE PINTURA</p>
+            </div>
+            <div class="div-icons-text">
+                <a href="servicos.html"><button class="button-icons"><img src="../img/icon-banco.png" alt="lavagem simples"></button></a>
+                <p>HIGIENIZAÇÃO DE BANCOS DE COURO E TECIDOS</p>
+            </div>
+            <div class="div-icons-text">
+                <a href="servicos.html"><button class="button-icons"><img src="../img/icon-farol.png" alt="lavagem simples"></button></a>
+                <p>RESTAURAÇÃO DE FAROL</p>
+            </div>
+            <div class="div-icons-text">
+                <a href="servicos.html"><button class="button-icons"><img src="../img/icon-roda.png" alt="lavagem simples"></button></a>
+                <p>PINTURA DE PINÇAS DE FREIOS</p>
+            </div>
+            <div class="div-icons-text">
+                <a href="servicos.html"><button class="button-icons"><img src="../img/icon-varinha.png" alt="lavagem simples"></button></a>
+                <p>MICRO RETOQUES</p>
+            </div>
+            <div class="div-icons-text">
+                <a href="servicos.html"><button class="button-icons"><img src="../img/icon-estrela.png" alt="lavagem simples"></button></a>
+                <p>POLIMENTO COMERCIAL</p>
+            </div>
+            <div class="div-icons-text">
+                <a href="servicos.html"><button class="button-icons"><img src="../img/icon-carro-brilho.png" alt="lavagem simples"></button></a>
+                <p>POLIMENTO TÉCNICO</p>
+            </div>
+            <div class="div-icons-text">
+                <a href="servicos.html"><button class="button-icons"><img src="../img/icon-pincel.png" alt="lavagem simples"></button></a>
+                <p>CORREÇÃO DE PINTURAS</p>
+            </div>
+            <div class="div-icons-text">
+                <a href="servicos.html"><button class="button-icons"><img src="../img/icon-escudo.png" alt="lavagem simples"></button></a>
+                <p>PROTEÇÃO DE PINTURAS</p>
+            </div>
+            <div class="div-icons-text">
+                <a href="servicos.html"><button class="button-icons"><img src="../img/icon-diamante.png" alt="lavagem simples"></button></a>
+                <p>VITRIFICAÇÃO DE PINTURA</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="galeria">
+
+    </section>
     
     <footer class="rodape">
         <div class="fita"><h1>SOBRE NÓS</h1></div>
