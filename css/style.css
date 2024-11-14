@@ -7,6 +7,9 @@
         font-family: "Inter", sans-serif;
         color: #d1d0d1;
     }
+    section {
+        padding-top: 80px;
+    }
 
     body {
         background-color: #0f0f0f;
@@ -15,11 +18,13 @@
     }
 
     header {
+        position: fixed;
         background-color: #0c0c0c;
         height: 80px;
-        width: auto;
+        width: 100%;
         justify-content: center;
         display: flex;
+        z-index: 2;
     }
 
     .div-logo {
@@ -53,4 +58,70 @@
 
     .link-menu:hover {
         color: #da2e2b;
+    }
+
+    .rodape {
+        background-color: #0c0c0c;
+        margin-top: 70px;
+    }
+    
+    .div-icons-rodape {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 200px;
+    }
+    
+    .button-icons {
+        height: 70px;
+        width: 70px;
+        background-color: #F60D09;
+        border-radius: 100%;
+        border: 0;
+    }
+    
+    .button-icons:hover {
+        background-color: #c20c09;
+        cursor: pointer;
+    }
+    
+    .img-icons {
+        height: 40px;
+    }
+    
+    hr {
+        margin: 50px 150px;
+    }
+
+    .link-rodape {
+        text-decoration: none;
+    }
+    
+    .div-icons-text {
+        text-align: center;
+        width: 25%;
+        min-width: 200px;
+        margin: 20px;
+    }
+    
+    .fita {
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        bottom: 35px;
+        width: 30vw;
+        min-width: 270px;
+        border-top: 70px solid #f60d09cc;
+        border-right: 50px solid transparent;
+        height: 0;
+    }
+    .fita h1 {
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: 10%;
+        margin: 0;
+        height: 70px;
+        font-size: 2.25em;
+        text-align: center;
+        color: white;
     }
