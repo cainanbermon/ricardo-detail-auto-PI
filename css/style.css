@@ -126,6 +126,20 @@
         color: white;
     }
 
-    .botao-zap {
-        
+    .button-zap {
+        height: 70px;
+        width: 70px;
+        background-color: #25D366;
+        border-radius: 100%;
+        border: 0;
+        right: 25px;
+        bottom: 25px;
+        position: fixed;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .button-zap:hover {
+        background-color: #1eb054;
     }
