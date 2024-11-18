@@ -6,7 +6,74 @@
     <link rel="icon" href="../img/R.svg" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/contato.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
     <title>Ricardo Detail - Contato</title>
+    <style>
+
+        .container-contato {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 600px;
+            margin-top: 100px;
+        }
+
+        .div-contato1 {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            left: 20%;
+        }
+
+        .div-contato2 {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            width: 350px;
+            right: 20%;
+        }
+
+        .div-icons-text {
+            display: flex;
+        }
+
+        .text-red {
+            color: #F60D09;
+        }
+
+        .div-text {
+            margin-left: 20px;
+            text-align: start;
+        }
+
+        p {
+            color: #fff;
+            width: 300px;
+            
+        }
+
+        .botao-zap {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            background-color: #F60D09;
+            height: 80px;
+            border-radius: 100px;
+        }
+        .botao-zap p {
+            width: fit-content;
+            margin: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .botao-zap:hover {
+            background-color: #c20c09;
+        }
+
+    </style>
 </head>
 <body>
     <header>
@@ -38,40 +105,81 @@
         <div class="banner-img-contato"></div>
     </section>
 
-    <footer class="rodape">
-        <div class="fita"><h1>SOBRE NÓS</h1></div>
-        <div>
+    <div class="container-contato">
+        <div class="div-contato1">
+
+            <h1><i>Fale Conosco</i></h1>
+            <div class="div-icons-text">
+                <img src="../img/icon-email.png" alt="Email">
+                <div class="div-text">
+                    <h2 class="text-red">E-mail</h2>
+                    <p>ricardo.pepe@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="div-icons-text">
+                <img src="../img/icon-zap.png" alt="Whatsapp">
+                <div class="div-text">
+                    <h2 class="text-red">Whatsapp</h2>
+                    <p>(14) 99650-2174</p>
+                </div>
+            </div>
+
+
+
+            <div class="div-icons-text">
+                <img src="../img/icon-face.png" alt="Facebook">
+                <div class="div-text">
+                    <h2 class="text-red">Facebook</h2>
+                    <p>Ricardo Detalhamento Automotivo</p>
+                </div>
+            </div>
+
+
+
+            <div class="div-icons-text">
+                <img src="../img/icon-isnta.png" alt="Instagram">
+                <div class="div-text">
+                    <h2 class="text-red">Instagram</h2>
+                    <p>ricardo_detail_auto</p>
+                </div>
+            </div>
+
+
+
         </div>
-        <div class="div-icons-rodape">
+
+        <div class="div-contato2">
+            <h1><i>Venha nos Encontrar</i></h1>
             <div class="div-icons-text">
-                <a class="link-rodape" href="https://www.instagram.com/ricardo_detail_auto/">
-                    <button class="button-icons">
-                            <img class="img-icons" src="../img/icon-isnta.png" alt="Instagram">
-                    </button>
-                </a>
-                <p>ricardo_detail_auto</p>
+                <img src="../img/icon-local.png" alt="Local">
+                <div class="div-text">
+                    <h2 class="text-red">Localização</h2>
+                    <p>Júlio Carboni 1009 , Jaú, SP</p>
+                </div>
             </div>
 
-            <div class="div-icons-text">
-                <a class="link-rodape" href="https://m.facebook.com/detailerautomotivo/">
-                    <button class="button-icons">
-                        <img class="img-icons" src="../img/icon-face.png" alt="Instagram">
-                    </button>
-                </a>
-                <p>Ricardo Detalhamento Automotivo</p>
-            </div>
+            
+            <a href="https://api.whatsapp.com/send/?phone=5514996502174">
+                <div class="botao-zap">
+                    <img class="img-botao-zap" src="../img/icon-zap.png" alt="Whatsapp">
+                    <p>Faça seu Agendamento Já!</p>
+                </div>
+            </a>
 
-            <div class="div-icons-text">
-                <button class="button-icons">
-                    <a class="link-rodape" href="https://www.instagram.com/ricardo_detail_auto/">
-                        <img class="img-icons" src="../img/icon-email.png" alt="Instagram">
-                    </a>
-                </button>
-                <p>ricardopepe@live.com</p>
-            </div>
+
         </div>
+    </div>
 
-        <hr>
-    </footer>
+
+    <div class="div-mapa">
+        <h1><i>ONDE ESTAMOS</i></h1>
+        <div id="mapa"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.1/dist/leaflet.markercluster.js"></script>
+
+    <script src="../js/contato.js"></script>
 </body>
 </html>
