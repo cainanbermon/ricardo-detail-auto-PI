@@ -18,6 +18,7 @@
 
 .text-banner {
     font-size: 110px;
+    width: fit-content;
 }
 
 .text-banner2 {
@@ -27,6 +28,7 @@
 .text-lado {
     justify-content: start;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .red {
