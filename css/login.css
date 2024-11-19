@@ -1,0 +1,46 @@
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", sans-serif;
+        color: #d1d0d1;
+        font-weight: bold;
+
+    }
+    body{
+      background-color: #131313;
+      height: 100%;
+    }
+
+    .login{
+        color: #d1d0d1;
+        font-size: 32px;
+    }
+
+    .logo{
+        height: 46px;
+        width: auto;
+    }
+
+    .loginbox{
+        background-color: #181717;
+        border-radius: 3px;
+    }
+
+    .input{
+        background-color: #101010; 
+        border: #201f1f;
+    }
+    
+    .btn{
+        background-color: #C00000;
+        color: #d1d0d1;
+        border: none;
+        border-radius: 3px;
+    }
+
+    .btn:hover{
+        background-color: #d12f2f;
+    }
+    
