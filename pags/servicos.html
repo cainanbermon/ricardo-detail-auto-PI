@@ -36,7 +36,6 @@
     background-image: url(../img/img-fundo-servicos1.png);
     background-size: cover;
     background-position: center;
-    display: flex;
 }
 
 .servico2 {
@@ -45,11 +44,18 @@
     background-image: url(../img/img-fundo-servicos2.png);
     background-size: cover;
     background-position: center;
-    display: flex;
 }
 
 .div-text-banner-direita {
-    margin-left: 30%;
+    justify-content: center;
+    margin: 0 50px;
+    align-items: center;
+    margin-bottom: 100px;
+    color: #fff;
+    display: flex;
+}
+
+.div-text-banner-esquerda {
     margin-top: 100px;
     color: #fff;
     flex-direction: column;
@@ -57,8 +63,12 @@
 }
 
 .text-servicos {
-    font-size: 60px;
-    width: fit-content;
+    font-size: 30px;
+}
+
+.text-servicos, p {
+    flex: 1;
+    padding: 0 20px;
 }
 
 
@@ -99,6 +109,8 @@
     <section class="servico1">
         <div class="div-text-banner-direita">
             <h1 class="text-servicos">LAVAGEM SIMPLES</h1>
+            <p>As proteções cerâmicas hoje são as mais procuradas pelos entusiastas de carros, elas trazem muitos br benefícios ao veiculo e qualidade de vida ao proprietário. 
+                DEIXE SEU VEÍCULO COM UMA PROTEÇÃO CONTRA CHUVA ÁCIDA, PEQUENOS RISCOS DE LAVAGEM</p>
         </div>
     </section>
 
