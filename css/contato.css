@@ -24,7 +24,7 @@
 }
 
 #mapa {
-    height: 500px;
+    height: 400px;
     width: 60%;
 }
 
@@ -37,9 +37,9 @@ b:hover {
 }
 
 .div-mapa {
-    margin: 100px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    position: absolute;
 }
