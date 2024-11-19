@@ -1,26 +1,24 @@
 .banner {
     width: 100%;
-    height: 500px;
-}
-.banner-img-contato {
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/banner_contato.jpeg);
-    background-position: center;
+    height: 80vh;
+    background-image: url(../img/banner_contato.png);
     background-size: cover;
-    z-index: -1;
-    opacity: 0.45;
-}
-
-.banner h1 {
+    background-position: center;
     display: flex;
     align-items: center;
-    position: absolute;
-    height: 10%;
-    top: 350px;
-    left: 10vw;
-    font-size: 5.75vw;
-    z-index: 1;
+}
+
+.div-text-banner {
+    margin-top: 100px;
+    color: #fff;
+    margin-left: 50px;
+    flex-direction: column;
+    display: flex;
+}
+
+.text-banner {
+    font-size: 110px;
+    width: fit-content;
 }
 
 #mapa {
