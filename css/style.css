@@ -78,15 +78,24 @@
         color: #da2e2b;
     }
 
+    main {
+        height: 80vh;
+    }
+
     .rodape {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         background-color: #0c0c0c;
         margin-top: 70px;
     }
     
     .div-icons-rodape {
         display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 1500px;
         justify-content: space-around;
-        padding: 0 200px;
     }
     
     .button-icons {
@@ -101,21 +110,18 @@
         justify-content: center;
     }
 
-    img {
-        height: 40px;
-        width: 40px;
-    }
-    
     .button-icons:hover {
         background-color: #c20c09;
         cursor: pointer;
     }
     
     .img-icons {
+        width: 40px;
         height: 40px;
     }
     
     hr {
+        min-width: 80%;
         margin: 50px 150px;
     }
 
@@ -134,6 +140,7 @@
         display: flex;
         align-items: flex-end;
         position: relative;
+        align-self: flex-start;
         bottom: 35px;
         width: 30vw;
         min-width: 270px;
@@ -141,6 +148,7 @@
         border-right: 50px solid transparent;
         height: 0;
     }
+
     .fita h1 {
         display: flex;
         align-items: center;
@@ -202,6 +210,15 @@
         .menu ul li{
             text-align: center;
             width: 100px;
+        }
+        .fita {
+            justify-content: center;
+            border-right: 0;
+            width: 100%;
+            min-width: 0;
+        }
+        .fita h1{
+            left: 0;
         }
     }
 
