@@ -9,6 +9,99 @@
     <link rel="stylesheet" href="css/galeria.css">
     <script src="js/galeria.js" defer></script>
     <title>Ricardo Detail - Home</title>
+    <style>
+
+hr {
+    border: 0;
+}
+
+.contato-banner {
+    margin-top: 100px;
+    width: 100%;
+    height: 60vh;
+    background-image: url(/img/img-banner-contato.png);
+    background-size: cover;
+    background-position: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.div-esquerda-contato {
+    justify-content: center;
+}
+
+.div-direita-contato {
+    margin-left: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-banner-contato {
+    color: #fff;
+    margin-left: 100px;
+    line-height: 0;
+}
+
+.text-1 {
+    font-size: 90px;
+    line-height: 1.2;
+}
+
+.text-2 {
+    line-height: 0;
+    font-size: 20px;
+}
+
+.icons-banner-contato {
+    margin-top: 200px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+    height: 100px;
+}
+
+.button-icons-contato {
+        height: 70px;
+        width: 70px;
+        background-color: transparent;
+        border-radius: 100%;
+        border: 0;
+    }
+
+    .saiba_mais {
+        font-size: 20px;
+        display: flex;
+        height: auto;
+        padding-top: 20px;
+        text-decoration: none;
+    }
+
+    .saiba_mais:hover {
+        color: red;
+    }
+
+    .local-contato {
+        display: flex;
+    }
+
+    .local-contato p {
+        margin-left: 10px;
+    }
+
+    .mini-mapa {
+        margin-top: 20px;
+        display: block;
+    }
+
+    .mini-mapa:hover .link-mini-mapa {
+        display: block;
+        background-color: #00000086;
+        color: #fff;
+    }
+
+    </style>
 </head>
 <body>
     <header>
@@ -19,12 +112,22 @@
 
         <nav class="menu">
             <ul>
-                <li>
-                    <a class="link-menu pag-selecionada" href="#secao1">SOBRE</a>
+                <li class="lista">
+                    <a class="link-menu pag-selecionada" href="index.html">HOME</a>
+                    <div class="submenu">
+                        <a href="#secao1">SOBRE</a>
+                        <a href="#secao2">SERVIÇOS</a>
+                        <a href="#secao3">CONTATO</a>
+                        <a href="#secao4">GALEIRA</a>
+                    </div>
                 </li>
 
-                <li>
-                    <a class="link-menu" href="pags/servicos.html">SERVIÇOS</a>
+                <li class="lista">
+                    <a class="link-menu" href="servicos.html">SERVIÇOS</a>
+                    <div class="submenu">
+                        <a href="/pags/servicos.html#secao1">LAVAGEM SIMPLES</a>
+                        <a href="/pags/servicos.html#secao2">LAVAGEM DETALHADA</a>
+                    </div>
                 </li>
 
                 <li>
@@ -44,6 +147,10 @@
         </div>
     </section>
 
+
+
+    <!------------------ SEÇÃO DO SOBRE ------------------------------------------------------>
+
     <section id="secao1" class="container">
         <h1 class="title">O QUE É DETALHAMENTO AUTOMOTIVO?</h1>
         <p>O <b>Detalhamento Automotivo </b>é um conjunto de <b>processos minuciosos </b> realizados para <b>limpar, restaurar, proteger e melhorar a aparência de um veículo,
@@ -54,9 +161,11 @@
         </p>
     </section>
 
-    <hr>
 
-    <section class="servicos">
+
+    <!------------------ SEÇÃO DOS SERVIÇOS  ------------------------------------------------------>
+
+    <section id="secao2" class="servicos">
         <h1>SERVIÇOS</h1>
         <div class="div-icons-servicos">
             <div class="div-icons-text">
@@ -110,9 +219,61 @@
         </div>
     </section>
 
-    <hr>
 
-    <section class="galeria">
+
+    <!------------------ SEÇÃO DO CONTATO ------------------------------------------------------>
+
+    <hr id="secao3">
+
+    <section class="contato-banner">
+        <div class="div-esquerda-contato">
+        <div class="text-banner-contato">
+            <h1 class="text-1">CONTATO</h1>
+            <p class="text-2">Faça o agendamento do seu serviço agora mesmo!</p>
+        </div>
+
+        <div class="icons-banner-contato">
+            <button class="button-icons-contato">
+                <a href="https://api.whatsapp.com/send/?phone=5514996502174">
+                    <img src="img/icon-zap-red.png" alt="Whatsapp">
+                </a>
+            </button>
+
+            <button class="button-icons-contato">
+                <a href="https://www.instagram.com/ricardo_detail_auto/">
+                    <img src="img/icon-insta-red.png" alt="Instagram">
+                </a>
+            </button>
+
+            <button class="button-icons-contato">
+                <a href="https://m.facebook.com/detailerautomotivo/">
+                    <img src="img/icon-face-red.png" alt="Facebook">
+                </a>
+            </button>
+            <a class="saiba_mais" href="/pags/contato.html">
+                Saiba mais...
+            </a>
+        </div>
+    </div>
+
+        <div class="div-direita-contato">
+            <div class="local-contato">
+                <img src="/img/icon-local-red.png" alt="Marcador">
+                <p>Júlio Carboni 1009 , Jaú - SP</p>
+            </div>
+
+            <img src="/img/mini-mapa.png" alt="mini-mapa">
+            <div class="mini-mapa">
+                <a class="link-mini-mapa" href="/pags/contato.html">Ir Para</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!------------------ SEÇÃO DA GALERIA ------------------------------------------------------>
+
+    <section id="secao4" class="galeria">
         <h1>GALERIA</h1>
         <div class="container-slider">
             <div class="slider-icon">
@@ -159,6 +320,10 @@
             <img src="img/the-rock-careca.png" alt="" class="img-original">
         </div>   
     </section>
+
+
+
+    <!------------------ SEÇÃO DO RODAPÉ ------------------------------------------------------>
     
     <footer class="rodape">
         <div class="fita"><h1>SOBRE NÓS</h1></div>

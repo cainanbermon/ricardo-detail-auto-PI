@@ -70,6 +70,29 @@
         color: #fff;
     }
 
+    .submenu {
+            display: none;
+            position: absolute;
+            min-width: 160px;
+        }
+
+    .lista:hover .submenu {
+        display: block;
+    }
+
+    .submenu a {
+        color: #fff;
+        background-color: #0c0c0c;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .submenu a:hover {
+        background-color: #161616;
+        color: #da2e2b;
+    }
+
     .pag-selecionada {
         box-shadow: #F60D09 0px 1px;
     }
