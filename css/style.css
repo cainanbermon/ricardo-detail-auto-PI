@@ -152,13 +152,6 @@
         text-decoration: none;
     }
     
-    .div-icons-text {
-        text-align: center;
-        width: 25%;
-        min-width: 200px;
-        margin: 20px;
-    }
-    
     .fita {
         display: flex;
         align-items: flex-end;
