@@ -71,10 +71,10 @@
     }
 
     .submenu {
-            display: none;
-            position: absolute;
-            min-width: 160px;
-        }
+        display: none;
+        position: absolute;
+        min-width: 160px;
+    }
 
     .lista:hover .submenu {
         display: block;
