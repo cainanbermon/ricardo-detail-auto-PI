@@ -72,3 +72,19 @@ p {
 .div-icons-servicos .div-icons-text {
     margin-top: 100px;
 }
+
+.mini-mapa {
+    margin-top: 20px;
+    display: block;
+    position: relative;
+}
+
+.link-mini-mapa {
+    position: absolute;
+}
+
+.mini-mapa:hover .link-mini-mapa {
+    display: block;
+    background-color: #00000086;
+    color: #fff;
+}
