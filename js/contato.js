@@ -1,4 +1,3 @@
-        
 // Coordenadas para a localização fornecida
 var lat = -22.26817;
 var lon = -48.55311;
@@ -18,16 +17,10 @@ var iconMarcador = L.icon({
     tooltipAnchor: [20, -10]
 });
 
-// Criar o marcador com o ícone vermelho
+// Inserir o ícone vermelho no mapa
 var icon_marcador = L.marker([lat, lon], {icon: iconMarcador}).addTo(mapa);
 
-// Função para obter o endereço via OSM Nominatim quando o cursor é passado sobre
-var geocodeUrl = `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lon}&format=json&addressdetails=1`;
-
-// Usar fetch para obter o endereço
-fetch(geocodeUrl).then(response => response.json()).then(data => {
-    var endereco = 'R. Júlio Carbone, 1009 - Jardim Sao Crispim';
-    var link_maps = '<a href="https://www.google.com.br/maps/place/Ricardo+Detalhamento+Automotivo/@-22.2683204,-48.5557521,17z/data=!3m1!4b1!4m6!3m5!1s0x94c757fe6388fcd5:0x2c96f7a23d1f7e97!8m2!3d-22.2683254!4d-48.5531772!16s%2Fg%2F11fzf56x26?entry=ttu&g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D"><b>Ricardo Detalhamento Automotivo</b></a>'
-    icon_marcador.bindTooltip(endereco);
-    icon_marcador.bindPopup(link_maps).openPopup();
-}).catch(error => console.error('Erro ao obter o endereço:', error));
+var endereco = 'R. Júlio Carbone, 1009 - Jardim Sao Crispim';
+var link_maps = '<a href="https://www.google.com.br/maps/place/Ricardo+Detalhamento+Automotivo/@-22.2683204,-48.5557521,17z/data=!3m1!4b1!4m6!3m5!1s0x94c757fe6388fcd5:0x2c96f7a23d1f7e97!8m2!3d-22.2683254!4d-48.5531772!16s%2Fg%2F11fzf56x26?entry=ttu&g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D"><b>Ricardo Detalhamento Automotivo</b></a>'
+icon_marcador.bindTooltip(endereco);
+icon_marcador.bindPopup(link_maps).openPopup();

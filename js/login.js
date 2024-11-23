@@ -1,4 +1,3 @@
-// Usuário e senha pré-definidos
 var user = {
     usuario: "ricardo",
     senha: "2024"
@@ -6,8 +5,7 @@ var user = {
 
 var botaoLogin = document.getElementById("botao_login");
 
-botaoLogin.addEventListener("click", (event) => {
-    event.preventDefault(); // Impedir que o evento aconteça
+botaoLogin.addEventListener("click", () => {
 
     var usuarioDigitado = document.getElementById("usuario").value;
     var senhaDigitada = document.getElementById("senha").value;
