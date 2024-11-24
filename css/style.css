@@ -177,6 +177,10 @@
         color: white;
     }
 
+    .linha-rodape {
+        border: 1 #e80909 solid;
+    }
+
     .button-zap {
         height: 70px;
         width: 70px;
@@ -193,6 +197,10 @@
 
     .button-zap:hover {
         background-color: #1eb054;
+    }
+
+    .linha-rodape {
+        border: 1px black solid;
     }
 
     @media (max-width: 800px) {
@@ -236,6 +244,13 @@
         .fita h1{
             left: 0;
         }
+    }
+
+    @media (max-width: 520px) {
+        .text-rodape {
+            display: none;
+        }
+
     }
 
     @media (max-width: 310px) {
