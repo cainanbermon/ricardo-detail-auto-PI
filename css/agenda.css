@@ -35,6 +35,8 @@ body{
 .btn-color {
     background-color: #F60D09;
     color: #fff;
+    width: 150px;
+    height: 40px;
 }
 
 a {
@@ -53,4 +55,5 @@ a {
 .btn-lista a {
     text-decoration: none;
     color: #F60D09cc;
+    width: 150px;
 }
