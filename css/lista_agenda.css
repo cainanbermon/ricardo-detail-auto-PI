@@ -17,8 +17,26 @@ body{
   min-height: 100vh;
 }
 
-
 .logo{
-    height: 46px;
-    width: auto;
+  height: 46px;
+  width: auto;
+}
+.embaixo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.embaixo button {
+  background-color: #F60D09;
+}
+.embaixo button:hover {
+  background-color: #F60D09cc;
+  color: #d1d0d1;
+}
+
+.embaixo a {
+  height: fit-content;
+  text-decoration: none;
+    color: #F60D09cc;
 }
