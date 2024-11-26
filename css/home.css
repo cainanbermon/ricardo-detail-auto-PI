@@ -10,7 +10,7 @@
 
 .div-text-banner {
     margin-top: 100px;
-    color: #fff;
+    color: var(--color-white);
     margin-left: 50px;
     flex-direction: column;
     display: flex;
@@ -32,7 +32,7 @@
 }
 
 .red {
-    color: #F60D09;
+    color: var(--color-red);
     margin-left: 5px;
 }
 
@@ -100,8 +100,8 @@ p {
 
 .mini-mapa:hover .link-mini-mapa {
     opacity: 1;
-    background-color: #00000086;
-    color: #fff;
+    background-color: #0000009c;
+    color: var(--color-white);
 }
 
 hr {
@@ -131,7 +131,7 @@ hr {
 }
 
 .text-banner-contato {
-    color: #fff;
+    color: var(--color-white);
     margin-left: 100px;
     line-height: 0;
 }
@@ -172,7 +172,7 @@ hr {
     }
 
     .saiba_mais:hover {
-        color: red;
+        color: var(--color-red);
     }
 
     .local-contato {

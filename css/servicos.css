@@ -10,7 +10,7 @@
 
 .div-text-banner {
     margin-top: 100px;
-    color: #fff;
+    color: var(--color-white);
     margin-left: 50px;
     flex-direction: column;
     display: flex;
@@ -47,7 +47,7 @@
 
 .div-text-banner-servico {
     margin: 0 50px;
-    color: #fff;
+    color: var(--color-white);
     display: flex;
 }
 
@@ -80,7 +80,7 @@ p {
         bottom: 35px;
         width: 40vw;
         min-width: 270px;
-        border-top: 70px solid #f60d09cc;
+        border-top: 70px solid var(--color-red-hover);
         border-right: 50px solid transparent;
         height: 0;
     }
@@ -94,5 +94,5 @@ p {
         height: 70px;
         font-size: 1.7em;
         text-align: center;
-        color: white;
+        color: var(--color-white);
     }

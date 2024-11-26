@@ -5,7 +5,7 @@
         padding: 0;
         line-height: 1.5;
         font-family: "Inter", sans-serif;
-        color: #d1d0d1;
+        color: var(--color-white_ton1);
     }
 
     html {
@@ -17,14 +17,14 @@
     }
 
     body {
-        background-color: #0f0f0f;
+        background-color: var(--color-black);
         height: 100%;
         width: 100%;
     }
 
     header {
         position: fixed;
-        background-color: #0c0c0c;
+        background-color: var(--color-black_ton1);
         min-height: 80px;
         width: 100%;
         justify-content: center;
@@ -67,7 +67,7 @@
 
     .link-menu {
         text-decoration: none;
-        color: #fff;
+        color: var(--color-white);
     }
 
     .submenu {
@@ -81,8 +81,8 @@
     }
 
     .submenu a {
-        color: #fff;
-        background-color: #0c0c0c;
+        color: var(--color-white);
+        background-color: var(--color-black_ton1);
         padding: 12px 16px;
         text-decoration: none;
         display: block;
@@ -90,15 +90,15 @@
 
     .submenu a:hover {
         background-color: #161616;
-        color: #da2e2b;
+        color: var(--color-red-hover);
     }
 
     .pag-selecionada {
-        box-shadow: #F60D09 0px 1px;
+        box-shadow: var(--color-red) 0px 1px;
     }
 
     .link-menu:hover {
-        color: #da2e2b;
+        color: var(--color-red-hover);
     }
 
     main {
@@ -109,7 +109,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        background-color: #0c0c0c;
+        background-color: var(--color-black_ton1);
         margin-top: 70px;
     }
     
@@ -124,7 +124,7 @@
     .button-icons {
         height: 70px;
         width: 70px;
-        background-color: #F60D09;
+        background-color: var(--color-red);
         border-radius: 100%;
         border: 0;
         justify-self: center;
@@ -134,7 +134,7 @@
     }
 
     .button-icons:hover {
-        background-color: #c20c09;
+        background-color: var(--color-red-hover);
         cursor: pointer;
     }
     
@@ -160,7 +160,7 @@
         bottom: 35px;
         width: 30vw;
         min-width: 270px;
-        border-top: 70px solid #f60d09cc;
+        border-top: 70px solid var(--color-red-hover);
         border-right: 50px solid transparent;
         height: 0;
     }
@@ -174,11 +174,11 @@
         height: 70px;
         font-size: 2.25em;
         text-align: center;
-        color: white;
+        color: var(--color-white);
     }
 
     .linha-rodape {
-        border: 1 #e80909 solid;
+        border: 1 var(--color-red-hover) solid;
     }
 
     .button-zap {
@@ -200,7 +200,7 @@
     }
 
     .linha-rodape {
-        border: 1px black solid;
+        border: 1px #000000 solid;
     }
 
     @media (max-width: 800px) {

@@ -10,7 +10,7 @@
 
 .div-text-banner {
     margin-top: 100px;
-    color: #fff;
+    color: var(--color-white);
     margin-left: 50px;
     flex-direction: column;
     display: flex;
@@ -27,11 +27,11 @@
 }
 
 b {
-    color: #302f2f;
+    color: var(--color-black);
 }
 
 b:hover {
-    color: red;
+    color: var(--color-red);
 }
 
 .div-mapa {
@@ -41,7 +41,6 @@ b:hover {
     width: 100%;
     position: relative;
 }
-
 
 body {
     display: flex;
@@ -100,7 +99,7 @@ body {
 }
 
 .text-red {
-    color: #F60D09;
+    color: var(--color-red);
 }
 
 .div-text {
@@ -109,7 +108,7 @@ body {
 }
 
 p {
-    color: #fff;
+    color: var(--color-white);
     width: auto;
 }
 
@@ -117,13 +116,13 @@ p {
     justify-content: center;
     display: flex;
     align-items: center;
-    background-color: #F60D09;
+    background-color: var(--color-red);
     height: 80px;
     border-radius: 100px;
     margin-top: 100px;
     width: 350px;
     border: solid 5px #5a0a09;
-    box-shadow: 1px 1px 20px -1px #F60D09;
+    box-shadow: 1px 1px 20px -1px var(--color-red);
 }
 
 .botao-zap img {
@@ -147,7 +146,7 @@ a {
 }
 
 .botao-zap:hover {
-    background-color: #c20c09;
+    background-color: var(--color-red-hover);
 }
 
 i {
