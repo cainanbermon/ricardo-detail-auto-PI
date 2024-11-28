@@ -54,7 +54,7 @@
     .menu {
         align-items: center;
         justify-content: center;
-        width: 300px;
+        width: 500px;
         display: flex;
     }
 
@@ -90,7 +90,7 @@
 
     .submenu a:hover {
         background-color: #161616;
-        color: var(--color-red-hover);
+        color: var(--color-red);
     }
 
     .pag-selecionada {
@@ -98,7 +98,7 @@
     }
 
     .link-menu:hover {
-        color: var(--color-red-hover);
+        color: var(--color-red);
     }
 
     main {
