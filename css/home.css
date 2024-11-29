@@ -37,8 +37,16 @@
 }
 
 .container {
-    padding: 5% 20%;
+    margin-top: 5vh;
     text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-size: 60px;
+    margin-right: 300px;
+    text-wrap: nowrap;
 }
 
 p {
