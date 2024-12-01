@@ -9,10 +9,21 @@
     <link rel="stylesheet" href="../css/color.css">
     <title>Ricardo Detail - Sobre Nós</title>
     <style>
+        header {
+            position: relative;
+        }
+        main {
+            height: auto;
+        }
+        .titulo {
+            font-size: 3.75em;
+            padding-left: 10%;
+            padding-top: 100px;
+        }
         .div-devs {
             width: 100%;
             height: auto;
-            padding-top: 90px;
+            padding-block: 50px;
             justify-content: space-evenly;
             display: flex;
             align-items: center;
@@ -21,9 +32,6 @@
         }
 
         .div_imgs {
-            position: relative;
-            width: 40%;
-            min-width: 300px;
             padding-block: 30px;
         }
 
@@ -38,16 +46,47 @@
             display: flex;
             justify-content: center;
             border-radius: 30px;
-            width: 450px;
-            margin: 0 50px;
+            width: 30%;
+            margin: 20px 50px;
             padding: 10px;
             text-decoration: none;
+        }
+
+        .div_text_sob {
+            margin-inline: 30px;
         }
 
         .link-img:hover {
             background-color: #0000003f;
             transform: scale(1.05);
             transition: 0.3s ;
+        }
+        @media (max-width: 800px) {
+            .titulo {
+                width: 100%;
+                padding-left: 0;
+                text-align: center;
+                font-size: 7vw;
+            }
+            .link-img {
+                width: 85%;
+                margin: 0;
+                justify-content: flex-start;
+            }
+            .div_imgs {
+                display: flex;
+                align-items: center;
+                padding-block: 2vw;
+            }
+            .img_dev {
+                height: 20vw;
+                min-height: 100px;
+            }
+            .div_text_sob {
+                text-align: start;
+                font-size: 3.5vw;
+                margin-inline: 3vw;
+            }
         }
     </style>
 </head>
@@ -84,37 +123,48 @@
             </ul>
         </nav>
     </header>
+    <main>
+    <h1 class="titulo">QUEM SOMOS?</h1>
     <div class="div-devs">
         <a href="https://github.com/wevertonryan" class="link-img">
             <div class="div_imgs">
                 <img class="img_dev" src="../img/img_weverton.jpg" alt="Weverton">
-                <h2 class="text-dev">Weverton Ryan</h2>
-                <p>Estudante da FATEC JAHU</p>
+                <div class="div_text_sob">
+                    <h2 class="text-dev">Weverton Ryan</h2>
+                    <p>Estudante da FATEC JAHU</p>
+                </div>
             </div>
         </a>
 
         <a href="https://github.com/BrunoozL" class="link-img">
             <div class="div_imgs">
                 <img class="img_dev" src="../img/img_bruno.png" alt="Bruno">
-                <h2 class="text-dev">Bruno Righi</h2>
-                <p>Estudante da FATEC JAHU</p>
+                <div class="div_text_sob">
+                    <h2 class="text-dev">Bruno Righi</h2>
+                    <p>Estudante da FATEC JAHU</p>
+                </div>
             </div>
         </a>
 
         <a href="https://github.com/cainanbermon/" class="link-img">
             <div class="div_imgs">
                 <img class="img_dev" src="../img/img_caina.jpg" alt="Cainã">
-                <h2 class="text-dev">Cainã Wellington</h2>
-                <p>Estudante da FATEC JAHU</p>
+                <div class="div_text_sob">
+                    <h2 class="text-dev">Cainã Wellington</h2>
+                    <p>Estudante da FATEC JAHU</p>
+                </div>
             </div>
         </a>
 
         <a href="https://github.com/ViniciusAbilio23" class="link-img">
             <div class="div_imgs">
                 <img class="img_dev" src="../img/img_vinicius.jpg" alt="Vinicius">
-                <h2 class="text-dev">Vinicius Abilio</h2>
-                <p>Estudante da FATEC JAHU</p>
+                <div class="div_text_sob">
+                    <h2 class="text-dev">Vinicius Abilio</h2>
+                    <p>Estudante da FATEC JAHU</p>
+                </div>
             </div>
         </a>
     </div>
+</main>
 </html>
