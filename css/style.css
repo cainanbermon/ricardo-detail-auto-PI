@@ -203,7 +203,7 @@
         border: 1px #000000 solid;
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 950px) {
         header {
             justify-content: flex-end;
         }
@@ -213,7 +213,7 @@
         }
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 750px) {
         header {
             justify-content: center;
             align-content: center;
@@ -252,11 +252,22 @@
         }
     }
 
-    @media (max-width: 310px) {
+    @media (max-width: 500px) {
         .menu {
-            width: auto;
+            width: 100%;
+
         }
         .menu ul {
-            flex-direction: column;
+            width: 100%;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .menu ul li{
+            text-align: center;
+            text-wrap: nowrap;
+            width: 50%;
+        }
+        .submenu {
+            width: 100%;
         }
     }
