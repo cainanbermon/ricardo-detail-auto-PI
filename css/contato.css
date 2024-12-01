@@ -3,7 +3,8 @@
     height: 80vh;
     background-image: url(../img/banner_contato.png);
     background-size: cover;
-    background-position: center;
+    background-position-y: center;
+    background-position-x: right;
     display: flex;
     align-items: center;
 }
@@ -17,7 +18,7 @@
 }
 
 .text-banner {
-    font-size: 110px;
+    font-size: 6.25em;
     width: fit-content;
 }
 
@@ -57,22 +58,32 @@ body {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 1070px;
-    padding-top: 50px;
+    height: auto;
+    padding-block: 50px;
+}
+
+.div-contato {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 50px;
 }
 
 .div-contato1 {
     display: flex;
     flex-direction: column;
     width: 350px;
-    margin-right: 200px;
 }
 
 .div-contato2 {
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    margin-left: 200px;
+    position: relative;
+    width: auto;
+}
+
+.div-contato1, .div-contato2 {
+    margin-bottom: 50px;
+    margin: 30px;
 }
 
 .div-icons-text {
@@ -115,12 +126,13 @@ p {
 .botao-zap {
     justify-content: center;
     display: flex;
+    position: absolute;
+    bottom: 0;
     align-items: center;
     background-color: var(--color-red);
     height: 80px;
-    border-radius: 100px;
-    margin-top: 100px;
     width: 350px;
+    border-radius: 100px;
     border: solid 5px #5a0a09;
     box-shadow: 1px 1px 20px -1px var(--color-red);
 }
@@ -163,4 +175,42 @@ hr {
     border: 0;
     top: 70%;
     position: absolute; 
+}
+
+@media (max-width: 1000px) {
+    #mapa {
+        width: 100%;
+    }
+    .banner {
+        margin-top: 70px;
+        height: 45vw;
+    }
+    .text-banner {
+        font-size: 4.50em;
+    }
+    .div-text-banner {
+        margin-left: 10%;
+        margin-top: 15%
+    }
+    .container-contato {
+        padding-bottom: 0;
+    }
+    .div-contato2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .banner {
+        margin-top: 120px;
+    }
+    .text-banner {
+        font-size: 3.50em;
+    }
+    .botao-zap {
+        width: 320px;
+    }
+    .div-contato1, .div-contato2 {
+        margin-inline: 0;
+    }
 }
