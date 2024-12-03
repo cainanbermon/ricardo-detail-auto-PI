@@ -124,7 +124,8 @@ hr {
 .contato-banner {
     margin-top: 100px;
     width: 100%;
-    height: 60vh;
+    height: 500px;
+    padding-top: 120px;
     background-image: url(../img/img-banner-contato.png);
     background-size: cover;
     background-position: center;
@@ -133,54 +134,71 @@ hr {
 }
 
 .div-esquerda-contato {
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
 }
 
 .div-direita-contato {
-    margin-left: 270px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 50%;
 }
 
 .text-banner-contato {
     color: var(--color-white);
-    margin-left: 100px;
+    margin-left: 10vw;
     line-height: 0;
 }
 
 .text-1 {
     font-size: 90px;
-    line-height: 1.2;
+    line-height: 0.9;
+
 }
 
 .text-2 {
-    line-height: 0;
+    margin-top: 10px;
     font-size: 20px;
 }
 
 .icons-banner-contato {
-    margin-top: 200px;
-    margin-left: 50px;
     display: flex;
-    justify-content: space-around;
-    width: 700px;
-    height: 100px;
+    justify-content: space-between;
+    width: 85%;
+    padding-left: 10vw;
+    max-width: 600px;
 }
 
 .button-icons-contato {
-        height: 70px;
-        width: 70px;
-        background-color: transparent;
-        border-radius: 100%;
-        border: 0;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: 70px;
+    background-color: transparent;
+    border-radius: 100%;
+    border: 0;
+}
+    
+.button-icons-contato a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
 
     .saiba_mais {
         font-size: 20px;
         display: flex;
+        align-items: center;
         height: auto;
-        padding-top: 20px;
         text-decoration: none;
     }
 
@@ -196,7 +214,7 @@ hr {
         margin-left: 10px;
     }
 
-    @media (max-width: 1000px){
+    @media (max-width: 1200px){
         .container {
             flex-direction: column;
             padding-block: 100px;
@@ -209,6 +227,28 @@ hr {
         .title {
             margin-bottom: 50px;
             font-size: 2.75em;
+        }
+
+        .contato-banner {
+            flex-direction: column;
+            justify-content: end;
+            align-items: center;
+        }
+        .text-banner-contato {
+            margin: 0;
+        }
+        .icons-banner-contato {
+            padding: 0;
+        }
+        .div-direita-contato {
+            overflow: hidden;
+            width: 0;
+            height: 0;
+        }
+        .div-esquerda-contato {
+            width: 80%;
+            max-width: 800px;
+            height: 100%;
         }
     }
     @media (max-width: 500px) {
