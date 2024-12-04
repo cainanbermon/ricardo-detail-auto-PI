@@ -180,15 +180,7 @@
     .linha-rodape {
         border: 1 var(--color-red-hover) solid;
     }
-    .div-icons-text {
-        text-align: center;
-        width: 20%;
-        min-width: 200px;
-        margin: 20px;
-        margin-block: 30px;
-    }
 
-    
     .text-rodape {
         font-size: 20px;
         line-height: 1.5;
@@ -229,6 +221,10 @@
     }
 
     @media (max-width: 750px) {
+        .text-rodape {
+            display: none;
+        }
+
         header {
             justify-content: center;
             align-content: center;
@@ -258,12 +254,6 @@
         }
         .fita h1{
             left: 0;
-        }
-    }
-
-    @media (max-width: 520px) {
-        .text-rodape {
-            display: none;
         }
     }
 
