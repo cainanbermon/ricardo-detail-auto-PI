@@ -49,10 +49,11 @@
     margin: 0 50px;
     color: var(--color-white);
     display: flex;
+    justify-content: space-between;
 }
 
 .text-servicos{
-    width: 250vh;
+    width: 45%;
 }
 
 .h1-esquerda {
@@ -78,7 +79,8 @@ p {
         position: relative;
         align-self: flex-start;
         bottom: 35px;
-        width: 40vw;
+        width: 45%;
+        max-width: 700px;
         min-width: 270px;
         border-top: 70px solid var(--color-red-hover);
         border-right: 50px solid transparent;
@@ -89,10 +91,48 @@ p {
         display: flex;
         align-items: center;
         position: relative;
-        left: 10%;
+        left: 8%;
         margin: 0;
         height: 70px;
         font-size: 1.7em;
         text-align: center;
         color: var(--color-white);
     }
+
+@media (max-width: 1000px) {
+    .div-text-banner-servico {
+        margin: 0;
+        width: 100%;
+        flex-direction: column;
+    }
+    .text-servicos {
+        width: 80%;
+        padding: 20px 10%;
+        text-align: center;
+    }
+    .linhas-secao {
+        margin: 50px 0;
+    }
+    .fita-banner-servico {
+        width: 70%;
+    }
+}
+@media (max-width: 700px) {
+    .fita-banner-servico {
+        justify-content: center;
+        width: 100%;
+        min-width: 100%;
+        border-right: 0;
+    }
+    .servico1 {
+        height: 300px;
+    }
+    .text-servicos {
+        font-size: 1em;
+        padding: 0px 10%;
+    }
+    .fita-banner-servico h1 {
+        left: 0;
+        font-size: 1.5em;
+    }
+}
