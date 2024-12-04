@@ -171,6 +171,7 @@ hr {
     width: 85%;
     padding-left: 10vw;
     max-width: 600px;
+    flex-wrap: wrap;
 }
 
 .button-icons-contato {
@@ -199,6 +200,7 @@ hr {
         display: flex;
         align-items: center;
         height: auto;
+        text-wrap: wrap;
         text-decoration: none;
     }
 
@@ -249,6 +251,34 @@ hr {
             width: 80%;
             max-width: 800px;
             height: 100%;
+        }
+    }
+    @media (max-width: 750px) {
+        .contato-banner {
+            height: auto;
+            padding-top: 70px;
+            padding-bottom: 30px;
+        }
+        .icons-banner-contato {
+            margin-top: 30px;
+            max-width: 300px;
+        }
+        .text-1 {
+            font-size: 60px;
+        }
+        .text-2, .saiba_mais {
+            font-size: 15px;
+        }
+        .saiba_mais {
+            width: 50%;
+            justify-content: center;
+        }
+        .button-icons-contato{
+            padding: 10px;
+            width: 50%;
+        }
+        .button-icons-contato img {
+            height: 40px;
         }
     }
     @media (max-width: 500px) {
