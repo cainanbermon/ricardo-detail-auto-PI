@@ -18,7 +18,6 @@
 
 .text-banner {
     font-size: 110px;
-    width: fit-content;
 }
 
 .text-banner2 {
@@ -216,6 +215,12 @@ hr {
         margin-left: 10px;
     }
 
+    @media (max-width: 1000px){
+        .banner {
+            height: 45vh;
+        }
+    }
+
     @media (max-width: 1200px){
         .container {
             flex-direction: column;
@@ -280,6 +285,30 @@ hr {
         .button-icons-contato img {
             height: 40px;
         }
+
+        .banner {
+            justify-content: center;
+            height: 45vw;
+        }
+
+        .text-banner {
+            font-size: 15vw;
+        }
+
+        .text-banner2 {
+            font-size: 5vw;
+        }
+
+        .div-text-banner {
+            margin: 0;
+            align-items: center;
+        }
+
+        .text-lado {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
     @media (max-width: 500px) {
         .container {
@@ -292,4 +321,9 @@ hr {
         .container p {
             font-size: 10px;
         }
+        .banner {
+            padding-top: 120px;
+        }
+
+
     }
