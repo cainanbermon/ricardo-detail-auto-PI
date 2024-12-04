@@ -180,6 +180,20 @@
     .linha-rodape {
         border: 1 var(--color-red-hover) solid;
     }
+    .div-icons-text {
+        text-align: center;
+        width: 20%;
+        min-width: 200px;
+        margin: 20px;
+        margin-block: 30px;
+    }
+
+    
+    .text-rodape {
+        font-size: 20px;
+        line-height: 1.5;
+        margin-top: 10px;
+    }
 
     .button-zap {
         height: 70px;
@@ -201,6 +215,7 @@
 
     .linha-rodape {
         border: 1px #000000 solid;
+        margin: 50px 0;
     }
 
     @media (max-width: 950px) {
