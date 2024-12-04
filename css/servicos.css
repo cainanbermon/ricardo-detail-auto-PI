@@ -1,3 +1,7 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
 .banner {
     width: 100%;
     height: 80vh;
@@ -114,6 +118,17 @@ p {
         width: 100%;
         flex-direction: column;
     }
+    .banner {
+        margin-top: 70px;
+        height: 45vw;
+    }
+    .text-banner {
+        font-size: 4.50em;
+    }
+    .div-text-banner {
+        margin-left: 10%;
+        margin-top: 15%
+    }
     .text-servicos {
         width: 80%;
         padding: 20px 10%;
@@ -124,6 +139,9 @@ p {
     }
     .fita-banner-servico {
         width: 70%;
+    }
+    .linhas-secao {
+        margin: 50px 0;
     }
 }
 @media (max-width: 700px) {
@@ -144,5 +162,17 @@ p {
         left: 0;
         font-size: 1.5em;
         position: relative;
+    }
+}
+
+@media (max-width: 500px) {
+    .banner {
+        margin-top: 120px;
+    }
+    .text-banner {
+        font-size: 3.50em;
+    }
+    .linhas-secao {
+        margin: 20px 0;
     }
 }
