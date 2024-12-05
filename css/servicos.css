@@ -36,6 +36,62 @@ body {
     background-image: url(../img/img-fundo-servicos1.png);
 }
 
+.img-banner-2 {
+    background-image: url(../img/img-fundo-servicos2.png);
+}
+
+.img-banner-3 {
+    background-image: url(../img/img-fundo-servicos3.png);
+}
+
+.img-banner-4 {
+    background-image: url(../img/img-fundo-servicos4.png);
+}
+
+.img-banner-5 {
+    background-image: url(../img/img-fundo-servicos5.png);
+}
+
+.img-banner-6 {
+    background-image: url(../img/img-fundo-servicos6.png);
+}
+
+.img-banner-7 {
+    background-image: url(../img/img-fundo-servicos7.png);
+}
+
+.img-banner-8 {
+    background-image: url(../img/img-fundo-servicos8.png);
+}
+
+.img-banner-9 {
+    background-image: url(../img/img-fundo-servicos9.png);
+}
+
+.img-banner-10 {
+    background-image: url(../img/img-fundo-servicos10.png);
+}
+
+.img-banner-11 {
+    background-image: url(../img/img-fundo-servicos11.png);
+}
+
+.img-banner-12 {
+    background-image: url(../img/img-fundo-servicos12.png);
+}
+
+.img-banner-13 {
+    background-image: url(../img/img-fundo-servicos13.png);
+}
+
+.img-banner-14 {
+    background-image: url(../img/img-fundo-servicos14.png);
+}
+
+.img-banner-15 {
+    background-image: url(../img/img-fundo-servicos15.png);
+}
+
 .div-text-banner-servico {
     margin: 0 50px;
     color: var(--color-white);
